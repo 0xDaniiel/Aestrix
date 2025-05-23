@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Reason from "@/components/Reason";
 import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
+import Projects from "@/components/Projects";
 import ScrollToTopButton from "@/components/ScrollToTop";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Reason />
       <Reviews />
       <Services />
+      <Projects /> {/* <-- Add Projects here */}
       <Footer />
       <ScrollToTopButton />
     </div>

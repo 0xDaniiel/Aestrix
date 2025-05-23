@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Roboto, Roboto_Mono } from "next/font/google";
+// import { Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { Montserrat } from "next/font/google";
 
-// Load Roboto and Roboto Mono fonts
-const roboto = Roboto({
-  variable: "--font-roboto",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
 });
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
-});
+// const robotoMono = Roboto_Mono({
+//   variable: "--font-roboto-mono",
+//   subsets: ["latin"],
+//   weight: ["400", "500"],
+// });
 
 // SEO metadata
 export const metadata: Metadata = {
@@ -58,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${robotoMono.variable} antialiased bg-white text-gray-900`}
+        className={`${montserrat.variable}  antialiased bg-white text-gray-900`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
       </body>
