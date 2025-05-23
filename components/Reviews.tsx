@@ -2,22 +2,22 @@ import React from "react";
 
 const reviews = [
   {
-    name: "Jane Doe",
-    role: "CEO, TechCorp",
+    name: "Mousa",
+    role: "CEO, Thermotrap (Saudi Arabia)",
     feedback:
-      "Aestrix transformed our digital presence. Their mobile app and blockchain expertise exceeded expectations!",
+      "Exceptional mobile app development tailored for our needs — highly recommend!",
   },
   {
-    name: "John Smith",
-    role: "Founder, StartUpX",
+    name: "Yasmin",
+    role: "CFO, Careposting Healthcare",
     feedback:
-      "Professional, timely, and innovative. The team truly cares about delivering results.",
+      "The healthcare website they built has been a game changer for our company’s outreach and patient engagement.",
   },
   {
-    name: "Sarah Lee",
-    role: "Product Manager, WebWorks",
+    name: "Donald James",
+    role: "CTO, Lumanagi",
     feedback:
-      "They understood our vision and brought it to life with a sleek website and flawless functionality.",
+      "Their expertise with whitelist management, airdrops, and token launch helped us execute flawlessly.",
   },
 ];
 
