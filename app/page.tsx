@@ -6,16 +6,18 @@ import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import ScrollToTopButton from "@/components/ScrollToTop";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <div>
       <Header />
       <Hero />
-      <Reason />
-      <Reviews />
+      <Reason /> {/* Why Choose Us */}
       <Services />
-      <Projects /> {/* <-- Add Projects here */}
+      <Projects /> {/* Portfolio */}
+      <Reviews /> {/* Testimonials */}
+      <About /> {/* About Us Section */}
       <Footer />
       <ScrollToTopButton />
     </div>

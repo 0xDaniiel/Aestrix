@@ -31,7 +31,7 @@ const Hero = () => {
         </section>
 
         {/* Call to Action Button */}
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center my-12">
           <Link href="/book-call" passHref legacyBehavior={false}>
             <Button className="inline-flex items-center bg-black text-white px-10 py-4 sm:px-14 sm:py-6 text-lg sm:text-3xl rounded-lg transition-colors duration-300 hover:bg-gray-900 hover:scale-105">
               Hire Us
