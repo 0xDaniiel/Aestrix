@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react"; // Import X icon
 const navLinks = [
   { href: "#services", label: "Services" },
   { href: "#about", label: "Why Us" },
-  { href: "#contact", label: "Contact" },
+  { href: "#contact", label: "Projects" },
 ];
 
 const Navigation = () => {
@@ -19,13 +19,13 @@ const Navigation = () => {
     <>
       <nav className="fixed top-0 left-0 w-full z-50 py-5 px-4 sm:px-6 lg:px-8">
         {/* Mobile nav: logo left, hamburger right with background + blur */}
-        <div className="sm:hidden flex items-center justify-between bg-white/30 backdrop-blur-lg backdrop-saturate-150 shadow-md rounded-lg px-4 py-3">
+        <div className="sm:hidden flex items-center justify-between bg-white/30 backdrop-blur-lg backdrop-saturate-150 shadow-sm rounded-lg px-4 py-3">
           <div>
             <Image
-              src="/images/icon.svg"
+              src="/images/icons.svg"
               alt="Aestrix Logo"
-              width={40}
-              height={40}
+              width={44}
+              height={44}
               priority
             />
           </div>
@@ -43,31 +43,32 @@ const Navigation = () => {
         <div className="hidden sm:flex justify-center mt-1">
           <div className="inline-flex items-center gap-10 bg-white/30 backdrop-blur-lg backdrop-saturate-150 shadow-md rounded-lg px-8 py-3">
             {/* Logo + Text */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center">
               <Image
-                src="/images/icon.svg"
+                src="/images/icons.svg"
                 alt="Aestrix Logo"
-                width={40}
-                height={40}
+                width={44}
+                height={44}
                 priority
               />
               <div className="text-2xl font-semibold">Aestrix</div>
             </div>
 
-            {/* Navigation Links */}
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className="text-gray-700 hover:text-black transition-colors duration-300"
-              >
-                {label}
-              </Link>
-            ))}
-
+            <section className="flex items-center gap-4">
+              {/* Navigation Links */}
+              {navLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="text-gray-700 hover:text-black transition-colors duration-300 hover:font-bold "
+                >
+                  {label}
+                </Link>
+              ))}
+            </section>
             {/* Button */}
             <Link href="/book-call" passHref legacyBehavior={false}>
-              <Button className="bg-black text-white px-5 py-3 hover:bg-gray-900 transition-colors duration-300">
+              <Button className="bg-black text-white px-6 py-4 hover:bg-gray-900 transition-colors duration-300">
                 Schedule a Call
               </Button>
             </Link>
