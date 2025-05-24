@@ -38,7 +38,7 @@ function CountUp({ target, duration = 2000 }: CountUpProps) {
 const About = () => {
   return (
     <FadeInOnScroll>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-6xl w-full px-4 py-20 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-6xl w-full px-4 pt-20 mx-auto">
         {stats.map(({ value, label }) => (
           <div
             key={label}
@@ -50,6 +50,14 @@ const About = () => {
             <p className="text-2xl text-gray-700 font-semibold">{label}</p>
           </div>
         ))}
+      </div>
+
+      <div className="max-w-3xl mx-auto mt-12 text-center px-4  pb-20">
+        <p className="text-lg text-gray-700 leading-relaxed">
+          We've collaborated with startups and businesses across the globe —
+          navigating time zones, cultures, and requirements to deliver reliable,
+          on-time solutions. Wherever you are, we adapt and deliver.
+        </p>
       </div>
     </FadeInOnScroll>
   );
