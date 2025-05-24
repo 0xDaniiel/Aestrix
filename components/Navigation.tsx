@@ -7,8 +7,8 @@ import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react"; // Import X icon
 
 const navLinks = [
-  { href: "#services", label: "Services" },
   { href: "#about", label: "Why Us" },
+  { href: "#services", label: "Services" },
   { href: "#contact", label: "Projects" },
 ];
 

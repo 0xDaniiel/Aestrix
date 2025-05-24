@@ -1,14 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { Montserrat } from "next/font/google";
 import FadeInOnScroll from "./FadeInOnScroll";
 import { Button } from "./ui/button";
-
-const stats = [
-  { value: "6+", label: "Years Experience" },
-  { value: "10+", label: "Members" },
-  { value: "30+", label: "Projects Completed" },
-];
 
 const Hero = () => {
   return (
@@ -25,37 +18,28 @@ const Hero = () => {
           </p>
         </div>
 
-        <section className=" py-20 px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-            We Design & Build High-Performing Websites & Apps That Scale
+        <section className="py-16 px-6 sm:px-8 md:px-12 text-center md:py-20">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-10 leading-relaxed sm:leading-snug md:leading-tight">
+            We Develop High-Performing Products That Scale
           </h1>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl opacity-90">
-            From idea to launch, we create tailored mobile apps, websites, and
-            blockchain solutions. Designed to accelerate your business growth.
+
+          <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl opacity-90 leading-relaxed">
+            From idea to launch, solutions that accelerate growth, increase
+            revenue, and simplify your business—guiding you every step of the
+            way.
           </p>
         </section>
 
         {/* Call to Action Button */}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-10">
           <Link href="/book-call" passHref legacyBehavior={false}>
-            <Button className="inline-flex items-center bg-black text-white px-10 py-4 sm:px-14 sm:py-6 text-lg sm:text-3xl rounded-lg transition-transform transition-colors duration-300 hover:bg-gray-900 hover:scale-105">
+            <Button className="inline-flex items-center bg-black text-white px-10 py-4 sm:px-14 sm:py-6 text-lg sm:text-3xl rounded-lg transition-colors duration-300 hover:bg-gray-900 hover:scale-105">
               Hire Us
             </Button>
           </Link>
         </div>
 
         {/* Stats Cards */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-10 justify-center w-full max-w-6xl pt-10">
-          {stats.map(({ value, label }) => (
-            <div
-              key={label}
-              className="w-full sm:w-72 bg-white rounded-xl shadow-lg p-10 text-center border border-gray-200"
-            >
-              <p className="text-6xl font-extrabold text-black mb-4">{value}</p>
-              <p className="text-2xl text-gray-700 font-semibold">{label}</p>
-            </div>
-          ))}
-        </div>
       </section>
     </FadeInOnScroll>
   );
