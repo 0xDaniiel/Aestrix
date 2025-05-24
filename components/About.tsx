@@ -59,6 +59,45 @@ const About = () => {
           on-time solutions. Wherever you are, we adapt and deliver.
         </p>
       </div>
+
+      <div className="max-w-2xl mx-auto px-4" id="contact-form">
+        <h3 className="text-2xl font-bold text-center mb-6">
+          Send us a message
+        </h3>
+        <form
+          action="https://formspree.io/f/your-form-id" // Replace this with your form handler
+          method="POST"
+          className="space-y-4"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="w-full border border-gray-300 rounded px-4 py-2"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            className="w-full border border-gray-300 rounded px-4 py-2"
+          />
+          <textarea
+            name="message"
+            rows={5}
+            placeholder="Your Message"
+            required
+            className="w-full border border-gray-300 rounded px-4 py-2"
+          />
+          <button
+            type="submit"
+            className="w-full bg-black text-white font-semibold py-2 rounded hover:bg-gray-900 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
     </FadeInOnScroll>
   );
 };

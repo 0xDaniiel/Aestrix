@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "tech agency",
   ],
   icons: {
-    icon: "/images/logo.svg",
+    icon: "/images/aerix.png",
   },
   authors: [{ name: "Aestrix Team", url: "https://aestrix.dev" }],
   creator: "Aestrix",

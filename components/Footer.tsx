@@ -16,9 +16,6 @@ const Footer = () => {
             <Link href="/terms-of-service" className="hover:underline">
               Terms of Service
             </Link>
-            <Link href="/terms-of-service" className="hover:underline">
-              Refund policy
-            </Link>
           </div>
 
           <div className="flex justify-center gap-6 text-gray-700 text-lg">
@@ -38,7 +35,10 @@ const Footer = () => {
             >
               <FiGithub />
             </Link>
-            <Link href="mailto:hello@aestrix.dev" className="hover:text-black">
+            <Link
+              href="mailto:dannydotdev@gmail.com"
+              className="hover:text-black"
+            >
               <FiMail />
             </Link>
           </div>
