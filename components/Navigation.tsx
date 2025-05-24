@@ -88,7 +88,11 @@ const Navigation = () => {
                 {label}
               </Link>
             ))}
-            <Link href="/book-call" passHref legacyBehavior={false}>
+            <Link
+              href="https://calendly.com/dannydotdev"
+              passHref
+              legacyBehavior={false}
+            >
               <Button
                 className="w-full bg-black text-white px-5 py-3 hover:bg-gray-900 transition-colors duration-300 mt-3"
                 onClick={() => setIsOpen(false)}
