@@ -11,14 +11,14 @@ import About from "@/components/About";
 export default function Home() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero />
-      <Reason /> {/* Why Choose Us */}
+      <Reason />
       <Services />
-      <Projects /> {/* Portfolio */}
-      <Reviews /> {/* Testimonials */}
-      <About /> {/* About Us Section */}
-      <Footer />
+      <Projects />
+      <Reviews />
+      <About />
+      {/* <Footer /> */}
       <ScrollToTopButton />
     </div>
   );
