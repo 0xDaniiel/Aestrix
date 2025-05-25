@@ -19,8 +19,8 @@ const Hero = () => {
         </div>
 
         <section className="py-16 px-6 sm:px-8 md:px-12 text-center md:py-20">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-10 leading-relaxed sm:leading-snug md:leading-tight">
-            We Develop High-Performing Products That Scale
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-10 leading-relaxed sm:leading-snug md:leading-tight">
+            Develop High-Performing Products That Scale
           </h1>
 
           <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl opacity-90 leading-relaxed">

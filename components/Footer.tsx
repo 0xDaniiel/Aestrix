@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { BsTwitterX } from "react-icons/bs";
 import { FiGithub, FiMail } from "react-icons/fi";
@@ -36,7 +37,7 @@ const Footer = () => {
               <FiGithub />
             </Link>
             <Link
-              href="mailto:dannydotdev@gmail.com"
+              href="mailto:/aestrix.dev@outlook.com"
               className="hover:text-black"
             >
               <FiMail />
