@@ -67,7 +67,13 @@ const Navigation = () => {
               ))}
             </section>
             {/* Button */}
-            <Link href="/book-call" passHref legacyBehavior={false}>
+            <Link
+              href="https://calendly.com/dannydotdev"
+              passHref
+              legacyBehavior={false}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button className="bg-black text-white px-6 py-4 hover:bg-gray-900 transition-colors duration-300">
                 Schedule a Call
               </Button>
@@ -92,6 +98,8 @@ const Navigation = () => {
               href="https://calendly.com/dannydotdev"
               passHref
               legacyBehavior={false}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Button
                 className="w-full bg-black text-white px-5 py-3 hover:bg-gray-900 transition-colors duration-300 mt-3"
