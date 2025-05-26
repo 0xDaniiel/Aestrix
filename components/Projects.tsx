@@ -11,7 +11,7 @@ const projects = [
     description:
       "An all-in-one EMR and advertising platform designed to simplify healthcare for providers.",
     image: "/images/careposting.svg",
-    link: "#",
+    link: "https://careposting.com/",
   },
   {
     title: "Subsync",
@@ -19,7 +19,7 @@ const projects = [
     description:
       "A curated newsletter hub delivering deals, discounts, and updates from your favorite brands.",
     image: "/images/newsletter.svg",
-    link: "#",
+    link: "https://subsync-newsletter.vercel.app/",
   },
   {
     title: "Hype Dog",
@@ -27,7 +27,7 @@ const projects = [
     description:
       "A meme-powered token on the Base Network. Join the $HYPD community and grow with us.",
     image: "/images/hypedog.svg",
-    link: "#",
+    link: "https://hype-dog.vercel.app/",
   },
   {
     title: "Texxtile",
@@ -35,7 +35,7 @@ const projects = [
     description:
       "Create and sell your custom apparel and merch with powerful tools and analytics built for creators.",
     image: "/images/textile.svg",
-    link: "#",
+    link: "https://my-texttile-two.vercel.app/",
   },
 ];
 
@@ -87,7 +87,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Learn More
+                    Visit Project
                   </Link>
                 )}
               </div>
