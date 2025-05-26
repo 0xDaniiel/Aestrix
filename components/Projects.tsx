@@ -1,25 +1,40 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
 
 const projects = [
   {
-    title: "Form Builder Platform",
+    title: "Careposting",
+    subtitle: "",
     description:
-      "A user-friendly platform that allows users to create, share, and publish custom forms with ease.",
+      "An all-in-one EMR and advertising platform designed to simplify healthcare for providers.",
+    image: "/images/careposting.svg",
     link: "#",
   },
   {
-    title: "Healthcare Website",
+    title: "Subsync",
+    subtitle: "",
     description:
-      "A modern, responsive website for healthcare services with appointment booking and patient resources.",
+      "A curated newsletter hub delivering deals, discounts, and updates from your favorite brands.",
+    image: "/images/newsletter.svg",
     link: "#",
   },
   {
-    title: "Blockchain Token Launch",
+    title: "Hype Dog",
+    subtitle: "",
     description:
-      "A comprehensive solution for whitelist management, airdrops, and token launches on the blockchain.",
+      "A meme-powered token on the Base Network. Join the $HYPD community and grow with us.",
+    image: "/images/hypedog.svg",
+    link: "#",
+  },
+  {
+    title: "Texxtile",
+    subtitle: "",
+    description:
+      "Create and sell your custom apparel and merch with powerful tools and analytics built for creators.",
+    image: "/images/textile.svg",
     link: "#",
   },
 ];
@@ -34,34 +49,52 @@ const Projects = () => {
         <h2 className="text-3xl font-extrabold text-center mb-10">
           Our Projects
         </h2>
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          {projects.map(({ title, description, link }, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-lg shadow-md border border-gray-200 p-6 opacity-0 animate-fadeIn"
-              style={{
-                animationDelay: `${idx * 150}ms`,
-                animationFillMode: "forwards",
-              }}
-            >
-              <div className="w-full h-40 bg-gray-200 rounded mb-4 flex items-center justify-center text-gray-400 font-bold text-xl">
-                Image
+
+        <div className="grid gap-10 sm:grid-cols-2">
+          {projects.map(
+            ({ title, subtitle, description, image, link }, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-lg shadow-md border border-gray-200 p-6 opacity-0 animate-fadeIn"
+                style={{
+                  animationDelay: `${idx * 150}ms`,
+                  animationFillMode: "forwards",
+                }}
+              >
+                <div className="w-full mb-4">
+                  <Image
+                    src={image}
+                    alt={title}
+                    width={600}
+                    height={300}
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+
+                <h3 className="text-xl font-semibold text-black mb-1">
+                  {title}
+                </h3>
+                {subtitle && (
+                  <h4 className="text-md font-medium text-gray-800 mb-1">
+                    {subtitle}
+                  </h4>
+                )}
+                <p className="text-gray-700 mb-4">{description}</p>
+                {link && (
+                  <Link
+                    href={link}
+                    className="text-black font-semibold hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Learn More
+                  </Link>
+                )}
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-black">{title}</h3>
-              <p className="text-gray-700 mb-4">{description}</p>
-              {link && (
-                <Link
-                  href={link}
-                  className="text-black font-semibold hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn More
-                </Link>
-              )}
-            </div>
-          ))}
+            )
+          )}
         </div>
+
         <style jsx>{`
           @keyframes fadeIn {
             to {
