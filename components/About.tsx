@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
+import toast from "react-hot-toast";
 
 const stats = [
   { value: 6, label: "Years Experience" },
@@ -13,7 +14,6 @@ interface CountUpProps {
   duration?: number;
 }
 
-// CountUp component animates from 0 to target number
 function CountUp({ target, duration = 2000 }: CountUpProps) {
   const [count, setCount] = useState(0);
 
@@ -36,6 +36,38 @@ function CountUp({ target, duration = 2000 }: CountUpProps) {
 }
 
 const About = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const res = await fetch("https://formspree.io/f/meogbwbw", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      setFormData({ name: "", email: "", message: "" });
+      toast.success("✅ Message sent successfully!");
+    } else {
+      toast.error("❌ Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <FadeInOnScroll>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-6xl w-full px-4 pt-20 mx-auto">
@@ -52,7 +84,7 @@ const About = () => {
         ))}
       </div>
 
-      <div className="max-w-3xl mx-auto mt-12 text-center px-4  pb-20">
+      <div className="max-w-3xl mx-auto mt-12 text-center px-4 pb-20">
         <p className="text-lg text-gray-700 leading-relaxed">
           We've collaborated with startups and businesses across the globe —
           navigating time zones, cultures, and requirements to deliver reliable,
@@ -64,16 +96,14 @@ const About = () => {
         <h3 className="text-2xl font-bold text-center mb-6">
           Send us a message
         </h3>
-        <form
-          action="https://formspree.io/f/your-form-id" // Replace this with your form handler
-          method="POST"
-          className="space-y-4"
-        >
+        <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
             name="name"
             placeholder="Your Name"
             required
+            value={formData.name}
+            onChange={handleChange}
             className="w-full border border-gray-300 rounded px-4 py-2"
           />
           <input
@@ -81,6 +111,8 @@ const About = () => {
             name="email"
             placeholder="Your Email"
             required
+            value={formData.email}
+            onChange={handleChange}
             className="w-full border border-gray-300 rounded px-4 py-2"
           />
           <textarea
@@ -88,6 +120,8 @@ const About = () => {
             rows={5}
             placeholder="Your Message"
             required
+            value={formData.message}
+            onChange={handleChange}
             className="w-full border border-gray-300 rounded px-4 py-2"
           />
           <button
@@ -96,6 +130,16 @@ const About = () => {
           >
             Send Message
           </button>
+          {status === "success" && (
+            <p className="text-green-600 mt-2 text-sm">
+              ✅ Message sent successfully!
+            </p>
+          )}
+          {status === "error" && (
+            <p className="text-red-600 mt-2 text-sm">
+              ❌ Something went wrong. Please try again.
+            </p>
+          )}
         </form>
       </div>
     </FadeInOnScroll>

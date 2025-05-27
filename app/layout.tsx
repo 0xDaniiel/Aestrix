@@ -3,6 +3,9 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
+
+
 
 const roboto = Poppins({
   subsets: ["latin"],
@@ -55,6 +58,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className}  bg-white text-gray-900`}>
+
+         <Toaster position="top-right" reverseOrder={false} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Header />
           {children}

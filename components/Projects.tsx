@@ -55,7 +55,7 @@ const Projects = () => {
             ({ title, subtitle, description, image, link }, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg shadow-md border border-gray-200 p-6 opacity-0 animate-fadeIn"
+                className="bg-white rounded-lg shadow-md border border-gray-200 p-6 opacity-0 animate-fadeIn transform transition duration-300 hover:scale-105 hover:shadow-lg"
                 style={{
                   animationDelay: `${idx * 150}ms`,
                   animationFillMode: "forwards",
