@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Reason from "@/components/Reason";
 import Reviews from "@/components/Reviews";
@@ -11,14 +9,12 @@ import About from "@/components/About";
 export default function Home() {
   return (
     <div>
-      {/* <Header /> */}
       <Hero />
       <Reason />
       <Services />
       <Projects />
       <Reviews />
       <About />
-      {/* <Footer /> */}
       <ScrollToTopButton />
     </div>
   );
