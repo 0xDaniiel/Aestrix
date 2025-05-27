@@ -41,13 +41,13 @@ const About = () => {
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -86,9 +86,9 @@ const About = () => {
 
       <div className="max-w-3xl mx-auto mt-12 text-center px-4 pb-20">
         <p className="text-lg text-gray-700 leading-relaxed">
-          We've collaborated with startups and businesses across the globe —
-          navigating time zones, cultures, and requirements to deliver reliable,
-          on-time solutions. Wherever you are, we adapt and deliver.
+          We&apos;ve collaborated with startups and businesses across the globe
+          — navigating time zones, cultures, and requirements to deliver
+          reliable, on-time solutions. Wherever you are, we adapt and deliver.
         </p>
       </div>
 
@@ -130,16 +130,6 @@ const About = () => {
           >
             Send Message
           </button>
-          {status === "success" && (
-            <p className="text-green-600 mt-2 text-sm">
-              ✅ Message sent successfully!
-            </p>
-          )}
-          {status === "error" && (
-            <p className="text-red-600 mt-2 text-sm">
-              ❌ Something went wrong. Please try again.
-            </p>
-          )}
         </form>
       </div>
     </FadeInOnScroll>
