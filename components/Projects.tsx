@@ -9,7 +9,7 @@ const projects = [
     title: "Careposting",
     subtitle: "",
     description:
-      "An all-in-one EMR and advertising platform designed to simplify healthcare for providers.",
+      "A platform that merges electronic medical records with marketing tools, empowering healthcare providers to streamline operations while growing their online presence.",
     image: "/images/careposting.svg",
     link: "https://careposting.com/",
   },
@@ -17,7 +17,7 @@ const projects = [
     title: "Subsync",
     subtitle: "",
     description:
-      "A curated newsletter hub delivering deals, discounts, and updates from your favorite brands.",
+      "Your inbox’s new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
     image: "/images/newsletter.svg",
     link: "https://subsync-newsletter.vercel.app/",
   },
@@ -25,7 +25,7 @@ const projects = [
     title: "Hype Dog",
     subtitle: "",
     description:
-      "A meme-powered token on the Base Network. Join the $HYPD community and grow with us.",
+      "A meme-fueled crypto project built on Base, $HYPD blends humor, community, and web3 culture into a playful, fast-growing token ecosystem.",
     image: "/images/hypedog.svg",
     link: "https://hype-dog.vercel.app/",
   },
@@ -33,17 +33,17 @@ const projects = [
     title: "Texxtile",
     subtitle: "",
     description:
-      "Create and sell your custom apparel and merch with powerful tools and analytics built for creators.",
+      "Built for creators, Texxtile makes it insanely easy to launch custom merch lines—with built-in analytics, seamless design tools, and direct-to-customer sales.",
     image: "/images/textile.svg",
     link: "https://my-texttile-two.vercel.app/",
   },
 
-  //Apps
+  // Apps
   {
     title: "LisBon User",
     subtitle: "",
     description:
-      "A rewarding transport-sharing mobile app designed for daily users seeking secure, reliable, and affordable transportation that also pays them for life",
+      "More than a ride—LisBon rewards everyday commuters with lifetime earnings while offering safe, affordable, and community-driven transportation.",
     image: "/images/lisbonuser.png",
     link: "https://apps.apple.com/ng/app/lisbon-user/id6737439784",
   },
@@ -51,7 +51,7 @@ const projects = [
     title: "Colonny: Communities app",
     subtitle: "",
     description:
-      "Connect with your City, Local or Campus Community, Buzz & Earn from Drops and Comments.",
+      "Turn your local campus or city into a buzzing social economy. Colonny lets users earn from posts and comments while building real-world connections.",
     image: "/images/colony.png",
     link: "https://apps.apple.com/ng/app/colonny-communities-app/id6462746411",
   },
@@ -73,10 +73,11 @@ const Projects = () => {
             ({ title, subtitle, description, image, link }, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg shadow-md border border-gray-200 p-6 opacity-0 animate-fadeIn transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                className="bg-white rounded-lg shadow-md border border-gray-200 p-6 opacity-0 animate-fadeIn transform transition duration-300 hover:scale-105 hover:shadow-lg flex flex-col justify-between"
                 style={{
                   animationDelay: `${idx * 150}ms`,
                   animationFillMode: "forwards",
+                  minHeight: "100%", // ensures full height for flex children
                 }}
               >
                 <div className="w-full mb-4">

@@ -7,8 +7,15 @@ const services = [
     icon: <Smartphone className="w-10 h-10 text-black mb-4" />,
     title: "Mobile App Development",
     description:
-      "Cross-platform mobile apps that perform reliably and connect you with users everywhere.",
-    stack: ["React Native", "TypeScript", "Figma", "Expo", "PostgreSQL"],
+      "Cross-platform (iOS and Android) mobile apps that perform reliably and connect you with users everywhere.",
+    stack: [
+      "React Native",
+      "Flutter",
+      "TypeScript",
+      "Figma",
+      "Expo",
+      "PostgreSQL",
+    ],
   },
   {
     icon: <Monitor className="w-10 h-10 text-black mb-4" />,
