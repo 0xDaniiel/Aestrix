@@ -37,6 +37,24 @@ const projects = [
     image: "/images/textile.svg",
     link: "https://my-texttile-two.vercel.app/",
   },
+
+  //Apps
+  {
+    title: "LisBon User",
+    subtitle: "",
+    description:
+      "A rewarding transport-sharing mobile app designed for daily users seeking secure, reliable, and affordable transportation that also pays them for life",
+    image: "/images/lisbonuser.png",
+    link: "https://apps.apple.com/ng/app/lisbon-user/id6737439784",
+  },
+  {
+    title: "Colonny: Communities app",
+    subtitle: "",
+    description:
+      "Connect with your City, Local or Campus Community, Buzz & Earn from Drops and Comments.",
+    image: "/images/colony.png",
+    link: "https://apps.apple.com/ng/app/colonny-communities-app/id6462746411",
+  },
 ];
 
 const Projects = () => {
