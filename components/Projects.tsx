@@ -14,28 +14,12 @@ const projects = [
     link: "https://careposting.com/",
   },
   {
-    title: "Subsync",
-    subtitle: "",
-    description:
-      "Your inbox’s new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
-    image: "/images/newsletter.svg",
-    link: "https://subsync-newsletter.vercel.app/",
-  },
-  {
     title: "Hype Dog",
     subtitle: "",
     description:
       "A meme-fueled crypto project built on Base, $HYPD blends humor, community, and web3 culture into a playful, fast-growing token ecosystem.",
     image: "/images/hypedog.svg",
     link: "https://hype-dog.vercel.app/",
-  },
-  {
-    title: "Texxtile",
-    subtitle: "",
-    description:
-      "Built for creators, Texxtile makes it insanely easy to launch custom merch lines—with built-in analytics, seamless design tools, and direct-to-customer sales.",
-    image: "/images/textile.svg",
-    link: "https://my-texttile-two.vercel.app/",
   },
 
   // Apps
@@ -54,6 +38,23 @@ const projects = [
       "Turn your local campus or city into a buzzing social economy. Colonny lets users earn from posts and comments while building real-world connections.",
     image: "/images/colony.png",
     link: "https://apps.apple.com/ng/app/colonny-communities-app/id6462746411",
+  },
+  {
+    title: "Subsync",
+    subtitle: "",
+    description:
+      "Your inbox’s new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
+    image: "/images/newsletter.svg",
+    link: "https://subsync-newsletter.vercel.app/",
+  },
+
+  {
+    title: "Texxtile",
+    subtitle: "",
+    description:
+      "Built for creators, Texxtile makes it insanely easy to launch custom merch lines—with built-in analytics, seamless design tools, and direct-to-customer sales.",
+    image: "/images/textile.svg",
+    link: "https://my-texttile-two.vercel.app/",
   },
 ];
 
