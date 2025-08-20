@@ -21,13 +21,7 @@ const Navigation = () => {
         {/* Mobile nav: logo left, hamburger right with background + blur */}
         <div className="sm:hidden flex items-center justify-between bg-white/30 backdrop-blur-lg backdrop-saturate-150 shadow-sm rounded-lg px-4 py-3">
           <Link href="/" className="flex items-center">
-            <Image
-              src="/images/icons.svg"
-              alt="Aestrix Logo"
-              width={44}
-              height={44}
-              priority
-            />
+            <h1 className="text-2xl font-semibold">Aestrix Devs</h1>
           </Link>
           <button
             onClick={() => setIsOpen((prev) => !prev)}
@@ -44,14 +38,7 @@ const Navigation = () => {
           <div className="inline-flex items-center gap-10 bg-white/30 backdrop-blur-lg backdrop-saturate-150 shadow-md rounded-lg px-8 py-3">
             {/* Logo + Text */}
             <Link href="/" className="flex items-center">
-              <Image
-                src="/images/icons.svg"
-                alt="Aestrix Logo"
-                width={44}
-                height={44}
-                priority
-              />
-              <div className="text-2xl font-semibold">Aestrix</div>
+              <h1 className="text-2xl font-semibold">Aestrix Devs</h1>
             </Link>
 
             <section className="flex items-center gap-4">

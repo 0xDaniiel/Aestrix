@@ -5,8 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 
-
-
 const roboto = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
@@ -26,11 +24,11 @@ export const metadata: Metadata = {
     "tech agency",
   ],
   icons: {
-    icon: "/images/aerix.png",
+    icon: "/images/aestrix.png",
   },
   authors: [{ name: "Aestrix Team", url: "https://aestrix.dev" }],
   creator: "Aestrix",
-  metadataBase: new URL("https://aestrix.dev"),
+  metadataBase: new URL("https://aestrixdevs.digital/"),
   openGraph: {
     title: "Aestrix - Custom Software Solutions",
     description:
@@ -58,8 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className}  bg-white text-gray-900`}>
-
-         <Toaster position="top-right" reverseOrder={false} />
+        <Toaster position="top-right" reverseOrder={false} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Header />
           {children}
