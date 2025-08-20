@@ -21,7 +21,7 @@ const Footer = () => {
 
           <div className="flex justify-center gap-6 text-gray-700 text-lg">
             <Link
-              href="https://x.com/0xDaniiel"
+              href="https://x.com/AestrixDevs"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-black"
