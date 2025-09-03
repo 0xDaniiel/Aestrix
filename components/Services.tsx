@@ -53,7 +53,7 @@ const Services = () => {
   return (
     <FadeInOnScroll>
       <section
-        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24"
         id="services"
       >
         <h2 className="text-3xl font-extrabold text-center mb-10">

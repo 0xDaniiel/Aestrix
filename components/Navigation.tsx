@@ -1,100 +1,80 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Menu, X } from "lucide-react"; // Import X icon
-
-const navLinks = [
-  // { href: "#about", label: "Why Us" },
-  { href: "/#services", label: "Services" },
-  { href: "/#projects", label: "Projects" },
-];
+import { navLinks } from "@/data";
+import MobileNav from "./MobileNav";
+import { ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 py-5 px-4 sm:px-6 lg:px-8">
-        {/* Mobile nav: logo left, hamburger right with background + blur */}
-        <div className="sm:hidden flex items-center justify-between bg-white/30 backdrop-blur-lg backdrop-saturate-150 shadow-sm rounded-lg px-4 py-3">
-          <Link href="/" className="flex items-center">
-            <h1 className="text-2xl font-semibold">Aestrix Devs</h1>
-          </Link>
-          <button
-            onClick={() => setIsOpen((prev) => !prev)}
-            aria-label="Toggle menu"
-            type="button"
-            className="transition-transform duration-300"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
+        {/* Mobile Navigation */}
+        <MobileNav />
 
-        {/* Desktop nav: centered content with background */}
-        <div className="hidden sm:flex justify-center mt-1">
-          <div className="inline-flex items-center gap-10 bg-white/30 backdrop-blur-lg backdrop-saturate-150 shadow-md rounded-lg px-8 py-3">
-            {/* Logo + Text */}
+        {/* Desktop nav */}
+        <div className="hidden sm:flex justify-center mt-1 w-full">
+          <div className="flex items-center justify-between w-full px-8 py-3">
+            {/* Logo */}
             <Link href="/" className="flex items-center">
               <h1 className="text-2xl font-semibold">Aestrix Devs</h1>
             </Link>
 
-            <section className="flex items-center gap-4">
-              {/* Navigation Links */}
-              {navLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-gray-700 hover:text-black transition-colors duration-300 hover:font-bold "
-                >
-                  {label}
-                </Link>
-              ))}
+            {/* Navigation Links */}
+            <section className="flex items-center gap-6">
+              {navLinks.map(({ href, label }) => {
+                const isActive =
+                  href === "/" ? pathname === "/" : pathname?.startsWith(href);
+
+                return (
+                  <Link
+                    key={href}
+                    href={href}
+                    className={`transition-colors duration-300 ${
+                      isActive
+                        ? "text-[#011B78] font-semibold"
+                        : "text-gray-700 hover:text-[#011B78] hover:font-semibold"
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                );
+              })}
             </section>
+
             {/* Button */}
             <Link
               href="https://calendly.com/dannydotdev"
-              passHref
-              legacyBehavior={false}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="bg-black text-white px-6 py-4 hover:bg-gray-900 transition-colors duration-300">
-                Schedule a Call
-              </Button>
-            </Link>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="sm:hidden absolute top-full left-0 w-full bg-white backdrop-blur-md shadow-md z-50 py-4 px-5 text-center text-lg rounded-b-lg">
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className="block text-gray-700 hover:text-black transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
-              >
-                {label}
-              </Link>
-            ))}
-            <Link
-              href="https://calendly.com/dannydotdev"
-              passHref
-              legacyBehavior={false}
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button
-                className="w-full bg-black text-white px-5 py-3 hover:bg-gray-900 transition-colors duration-300 mt-3"
-                onClick={() => setIsOpen(false)}
+                className="
+          group
+          text-[#011B78] 
+          bg-white 
+          hover:bg-[#011B78] 
+          hover:text-white 
+          px-6 py-4 
+          border-2 border-[#011B78] 
+          shadow-[3px_3px_0px_#011B78] 
+          hover:translate-x-[2px] hover:translate-y-[2px] 
+          hover:shadow-[1px_1px_0px_#011B78] 
+          active:translate-x-[2px] active:translate-y-[2px] 
+          active:shadow-[1px_1px_0px_#011B78] 
+          transition-all duration-200
+        "
               >
-                Schedule a Call
+                Let&apos;s talk{" "}
+                <ArrowRight className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>
-        )}
+        </div>
       </nav>
 
       {/* Padding for fixed nav */}

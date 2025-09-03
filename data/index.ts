@@ -48,3 +48,10 @@ export const projects = [
     link: "https://apps.apple.com/ng/app/colonny-communities-app/id6462746411",
   },
 ];
+
+export const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/#services", label: "Services" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#testimonial", label: "Testimonial" },
+];
