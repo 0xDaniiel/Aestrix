@@ -15,7 +15,7 @@ const Hero = () => {
     <div>
       <FadeInOnScroll>
         <section
-          className="relative w-full bg-white pt-16 md:pt-20"
+          className="relative w-full bg-white min-h-screen pt-16 md:pt-20"
           style={{
             backgroundImage: "url('/images/pattern.svg')",
             backgroundRepeat: "no-repeat",

@@ -24,10 +24,10 @@ const unbounded = Unbounded({
 
 const Projects = () => {
   return (
-    <div className="mb-20 ">
+    <div>
       <FadeInOnScroll>
         <section
-          className="mx-auto scroll-mt-24 px-6 sm:px-8 lg:px-8 pt-16 md:pt-20"
+          className="max-w-7xl min-h-screen mx-auto scroll-mt-24 px-6 sm:px-8 lg:px-8 pt-12 md:pt-16"
           id="projects"
         >
           <h2

@@ -6,7 +6,6 @@ import Image from "next/image";
 import { servicesData } from "@/data";
 import { motion, AnimatePresence } from "framer-motion";
 
-
 const unbounded = Unbounded({
   subsets: ["latin"],
   weight: ["400", "600", "700", "800"],
@@ -19,7 +18,7 @@ const Services = () => {
     <div className="bg-[#FEFDFB] pb-5 mt-2">
       <FadeInOnScroll>
         <section
-          className="scroll-mt-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20"
+          className="scroll-mt-24 max-w-7xl min-h-screen mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16"
           id="services"
         >
           <h2

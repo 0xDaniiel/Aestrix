@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
   return (
     <div>
       <FadeInOnScroll>
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20">
+        <section className="max-w-7xl min-h-screen mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16">
           <h2
             className={`${unbounded.className} text-3xl md:text-4xl font-extrabold mb-10 text-left text-[#011045]`}
           >
