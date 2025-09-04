@@ -11,7 +11,7 @@ const words = ["Innovate", "Create", "Inspire"];
 const FloatingCarousel = () => {
   return (
     <div
-      className={`${unbounded.className} overflow-hidden w-full bg-white py-12`}
+      className={`${unbounded.className} overflow-hidden w-full bg-white py-8`}
     >
       <div className="flex animate-marquee whitespace-nowrap">
         {/* First loop */}

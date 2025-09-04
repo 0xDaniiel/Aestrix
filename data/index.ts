@@ -64,23 +64,50 @@ export const stats = [
 
 export const reasons = [
   {
+    images: "/images/expert-team.svg",
     title: "Expert Team",
     description:
       "Our skilled professionals deliver high-quality solutions tailored to your needs.",
   },
   {
+    images: "/images/innovative.svg",
     title: "Innovative Solutions",
     description:
       "We leverage the latest technologies including blockchain, mobile, and web development.",
   },
   {
+    images: "/images/customer-focused.svg",
     title: "Customer Focused",
     description:
       "Your success is our priority — we work closely with you every step of the way.",
   },
   {
+    images: "/images/proven.svg",
     title: "Proven Results",
     description:
       "30+ projects completed with measurable growth for our clients.",
+  },
+];
+
+export const servicesData = [
+  {
+    title: "Web Development",
+    image: "/images/4w.jpg",
+    techStack: ["React", "Next.js", "Tailwind CSS", "Node.js"],
+  },
+  {
+    title: "App Development",
+    image: "/images/1a.jpg",
+    techStack: ["React Native", "Expo", "Firebase", "Redux"],
+  },
+  {
+    title: "Blockchain Development",
+    image: "/images/2b.png",
+    techStack: ["Solidity", "Ethereum", "Hardhat", "Web3.js"],
+  },
+  {
+    title: "UI/UX Design",
+    image: "/images/3u.png",
+    techStack: ["Figma", "Adobe XD", "Sketch", "Framer"],
   },
 ];

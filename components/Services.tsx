@@ -1,88 +1,102 @@
-import React from "react";
-import { Smartphone, Monitor, Database } from "lucide-react";
+"use client";
+import React, { useState } from "react";
+import { Unbounded } from "next/font/google";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
+import Image from "next/image";
+import { servicesData } from "@/data";
+import { motion, AnimatePresence } from "framer-motion";
 
-const services = [
-  {
-    icon: <Smartphone className="w-10 h-10 text-black mb-4" />,
-    title: "Mobile App Development",
-    description:
-      "Cross-platform (iOS and Android) mobile apps that perform reliably and connect you with users everywhere.",
-    stack: [
-      "React Native",
-      "Flutter",
-      "TypeScript",
-      "Figma",
-      "Expo",
-      "PostgreSQL",
-    ],
-  },
-  {
-    icon: <Monitor className="w-10 h-10 text-black mb-4" />,
-    title: "Web Development",
-    description:
-      "Fullstack websites and web apps that engage users, convert better, and scale with your business.",
-    stack: [
-      "Next.js",
-      "React",
-      "Node.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Python",
-    ],
-  },
-  {
-    icon: <Database className="w-10 h-10 text-black mb-4" />,
-    title: "Blockchain Solutions",
-    description:
-      "From NFTs to trading bots, we build secure Web3 products that deliver real-world value and scale with confidence.",
-    stack: [
-      "Solidity",
-      "Hardhat",
-      "Ethereum",
-      "Polygon",
-      "Solana",
-      "Go",
-      "Python",
-      "IPFS",
-    ],
-  },
-];
+const unbounded = Unbounded({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+});
 
 const Services = () => {
+  const [selectedService, setSelectedService] = useState(servicesData[0]);
+
   return (
-    <FadeInOnScroll>
-      <section
-        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24"
-        id="services"
-      >
-        <h2 className="text-3xl font-extrabold text-center mb-10">
-          Our Services
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map(({ icon, title, description, stack }) => (
-            <div
-              key={title}
-              className="bg-white rounded-lg shadow-md p-6 text-center border border-gray-200"
-            >
-              {icon}
-              <h3 className="text-xl font-semibold mb-2">{title}</h3>
-              <p className="text-gray-600 mb-4">{description}</p>
-              <ul className="flex flex-wrap justify-center gap-2 text-sm text-gray-500 mt-4">
-                {stack.map((tech) => (
-                  <li
-                    key={tech}
-                    className="bg-gray-100 px-3 py-1 rounded-full text-xs font-medium"
-                  >
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+    <div className="bg-[#FEFDFB] pb-5 mt-2">
+      <FadeInOnScroll>
+        <section
+          className="scroll-mt-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20"
+          id="services"
+        >
+          <h2
+            className={`${unbounded.className} text-3xl md:text-4xl font-extrabold mb-10 text-left text-[#011045]`}
+          >
+            Our{" "}
+            <span className="bg-gradient-to-r from-[#EABF83] to-[#D6A35D] text-transparent bg-clip-text">
+              Services
+            </span>
+          </h2>
+
+          <div className="flex flex-col lg:flex-row gap-10">
+            {/* Left column: service cards */}
+            <div className="flex flex-col gap-6 w-full lg:w-1/2">
+              {servicesData.map((service) => (
+                <div
+                  key={service.title}
+                  onClick={() => setSelectedService(service)}
+                  className={`bg-white rounded-lg shadow-md p-6 text-center 
+                           border-2 border-white  text-[#011045] font-semibold
+                           transition-all duration-200 
+                           hover:translate-x-[2px] hover:translate-y-[2px] 
+                           hover:shadow-[1px_1px_0px_#011B78] 
+                           cursor-pointer ${
+                             selectedService.title === service.title
+                               ? "border-[#011B78]"
+                               : ""
+                           }`}
+                >
+                  {service.title}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
-    </FadeInOnScroll>
+
+            {/* Right column: image + tech stack */}
+            <div className="w-full lg:w-1/2 flex flex-col items-center">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={selectedService.title} // Triggers animation when service changes
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.3 }}
+                  className="w-full h-64 relative mb-6"
+                >
+                  <Image
+                    src={selectedService.image}
+                    alt={selectedService.title}
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </motion.div>
+              </AnimatePresence>
+
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={selectedService.title + "-tech"}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex flex-wrap gap-3 justify-center"
+                >
+                  {selectedService.techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-[#011045] text-white px-4 py-2 rounded-full text-sm font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </div>
+        </section>
+      </FadeInOnScroll>
+    </div>
   );
 };
 

@@ -15,6 +15,7 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <Projects />
+      <FloatingCarousel />
       <Reviews />
       <About />
       <ScrollToTopButton />

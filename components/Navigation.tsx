@@ -12,7 +12,8 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 py-5 px-4 sm:px-6 lg:px-8">
+      {/* <nav className="fixed top-0 left-0 w-full z-50 py-5 px-4 sm:px-6 lg:px-8"> */}
+      <nav className="fixed top-0 left-0 w-full z-50 py-5 px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-md">
         {/* Mobile Navigation */}
         <MobileNav />
 
