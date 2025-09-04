@@ -18,7 +18,7 @@ const Services = () => {
     <div className="bg-[#FEFDFB] pb-5 mt-2">
       <FadeInOnScroll>
         <section
-          className="scroll-mt-24 max-w-7xl min-h-screen mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16"
           id="services"
         >
           <h2
