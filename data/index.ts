@@ -61,3 +61,26 @@ export const stats = [
   { value: 10, label: "Team Members" },
   { value: 30, label: "Projects Completed" },
 ];
+
+export const reasons = [
+  {
+    title: "Expert Team",
+    description:
+      "Our skilled professionals deliver high-quality solutions tailored to your needs.",
+  },
+  {
+    title: "Innovative Solutions",
+    description:
+      "We leverage the latest technologies including blockchain, mobile, and web development.",
+  },
+  {
+    title: "Customer Focused",
+    description:
+      "Your success is our priority — we work closely with you every step of the way.",
+  },
+  {
+    title: "Proven Results",
+    description:
+      "30+ projects completed with measurable growth for our clients.",
+  },
+];
