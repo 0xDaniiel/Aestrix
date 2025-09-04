@@ -55,3 +55,9 @@ export const navLinks = [
   { href: "/#projects", label: "Projects" },
   { href: "/#testimonial", label: "Testimonial" },
 ];
+
+export const stats = [
+  { value: 6, label: "Years Experience" },
+  { value: 10, label: "Team Members" },
+  { value: 30, label: "Projects Completed" },
+];

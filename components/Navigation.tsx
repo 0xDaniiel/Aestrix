@@ -21,7 +21,9 @@ const Navigation = () => {
           <div className="flex items-center justify-between w-full px-8 py-3">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <h1 className="text-2xl font-semibold">Aestrix Devs</h1>
+              <h1 className="text-2xl text-[#011045] font-semibold">
+                Aestrix Devs
+              </h1>
             </Link>
 
             {/* Navigation Links */}
