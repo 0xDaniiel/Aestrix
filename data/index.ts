@@ -1,19 +1,19 @@
 export const projects = [
   {
-    title: "Subsync",
-    subtitle: "",
-    description:
-      "Your inbox's new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
-    image: "/images/newsletter.svg",
-    link: "https://subsync-newsletter.vercel.app/",
-  },
-  {
     title: "Yefa Daily",
     subtitle: "",
     description:
       "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
     image: "/images/yefa.png",
     link: "https://yefadaily.com",
+  },
+  {
+    title: "Subsync",
+    subtitle: "",
+    description:
+      "Your inbox's new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
+    image: "/images/newsletter.svg",
+    link: "https://subsync-newsletter.vercel.app/",
   },
   {
     title: "Careposting",
@@ -31,13 +31,14 @@ export const projects = [
     image: "/images/textile.svg",
     link: "https://my-texttile-two.vercel.app/",
   },
+
   {
-    title: "LisBon User",
+    title: "Yefa Daily",
     subtitle: "",
     description:
-      "More than a ride—LisBon rewards everyday commuters with lifetime earnings while offering safe, affordable, and community-driven transportation.",
-    image: "/images/lisbonuser.png",
-    link: "https://apps.apple.com/ng/app/lisbon-user/id6737439784",
+      "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
+    image: "/images/yefa.png",
+    link: "https://yefadaily.com",
   },
   {
     title: "Colonny: Communities app",

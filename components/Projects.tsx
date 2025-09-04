@@ -5,8 +5,10 @@ import React from "react";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
 import { projects } from "@/data/index";
 import { Unbounded } from "next/font/google";
+import { ArrowRight } from "lucide-react";
+import { Button } from "./ui/button";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -29,7 +31,7 @@ const Projects = () => {
           id="projects"
         >
           <h2
-            className={`${unbounded.className} text-3xl md:text-4xl font-extrabold mb-10 text-left text-[#011045]`}
+            className={`${unbounded.className} text-3xl md:text-4xl font-extrabold pb-10 text-left text-[#011045]`}
           >
             Our{" "}
             <span className="bg-gradient-to-r from-[#EABF83] to-[#D6A35D] text-transparent bg-clip-text">
@@ -74,20 +76,26 @@ const Projects = () => {
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="
-                    group
-                    text-[#011B78] bg-white cursor-pointer text-center
-                    px-3 py-2 border-2 border-[#011B78] 
-                    shadow-[3px_3px_0px_#011B78] rounded-md
-                    hover:bg-[#011B78] hover:text-white
-                    hover:translate-x-[2px] hover:translate-y-[2px]
-                    hover:shadow-[1px_1px_0px_#011B78]
-                    active:translate-x-[2px] active:translate-y-[2px]
-                    active:shadow-[1px_1px_0px_#011B78]
-                    transition-all duration-200
-                  "
                           >
-                            Visit Project
+                            <Button
+                              className="
+                                    group
+                                    w-full
+                                    text-[#011B78] bg-white text-center
+                                    px-3 py-2 border-2 border-[#011B78]
+                                    shadow-[3px_3px_0px_#011B78] rounded-md
+                                    hover:bg-[#011B78] hover:text-white
+                                    hover:translate-x-[2px] hover:translate-y-[2px]
+                                    hover:shadow-[1px_1px_0px_#011B78]
+                                    active:translate-x-[2px] active:translate-y-[2px]
+                                    active:shadow-[1px_1px_0px_#011B78]
+                                    transition-all duration-200
+                                    flex justify-center items-center
+                                  "
+                            >
+                              Visit Project{" "}
+                              <ArrowRight className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1" />
+                            </Button>
                           </Link>
                         )}
                       </div>

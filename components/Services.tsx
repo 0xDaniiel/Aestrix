@@ -6,6 +6,7 @@ import Image from "next/image";
 import { servicesData } from "@/data";
 import { motion, AnimatePresence } from "framer-motion";
 
+
 const unbounded = Unbounded({
   subsets: ["latin"],
   weight: ["400", "600", "700", "800"],
