@@ -17,7 +17,6 @@ export default function Home() {
       <Projects />
       <FloatingCarousel />
       <Reviews />
-      <About />
       <ScrollToTopButton />
     </div>
   );
