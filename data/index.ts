@@ -112,3 +112,24 @@ export const servicesData = [
     techStack: ["Figma", "Adobe XD", "Sketch", "Framer"],
   },
 ];
+
+export const reviews = [
+  {
+    name: "Tamara (Lagos, Nigeria)",
+    role: "CEO, Yefa Daily (Saudi Arabia)",
+    feedback:
+      "Exceptional mobile app development customized for our platform, enabling users to create, share, and publish forms — highly recommend!",
+  },
+  {
+    name: "Yasmin (Singapore)",
+    role: "CFO, Careposting Healthcare",
+    feedback:
+      "The healthcare website they built has been a game changer for our company's outreach and patient engagement.",
+  },
+  {
+    name: "Donald James (Hungary)",
+    role: "CTO, Lumanagi",
+    feedback:
+      "Their expertise with whitelist management, airdrops, and token launch helped us execute flawlessly.",
+  },
+];
