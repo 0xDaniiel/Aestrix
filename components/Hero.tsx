@@ -14,15 +14,13 @@ const Hero = () => {
   return (
     <div>
       <FadeInOnScroll>
-        <section
-          className="relative w-full bg-white min-h-screen pt-16 md:pt-20"
-          style={{
+        <section className="relative w-full bg-white min-h-screen pt-16 md:pt-20 bg-[url('/images/pattern.svg')] bg-no-repeat bg-center bg-cover">
+          {/* style={{
             backgroundImage: "url('/images/pattern.svg')",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
-          }}
-        >
+          }} */}
           <div className="flex flex-col items-center px-6 sm:px-8 lg:px-12 max-w-5xl mx-auto text-center">
             {/* Open to Work Badge */}
             <div className="inline-flex items-center gap-2 px-2.5 py-1 text-xs rounded-full bg-green-100 border border-green-300 select-none cursor-default">
