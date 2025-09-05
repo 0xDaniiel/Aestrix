@@ -20,19 +20,25 @@ const Reviews = () => {
               Say
             </span>
           </h2>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-6 items-stretch">
             {reviews.map(({ name, role, feedback }, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg border-2 border-[#011B78] shadow-[3px_3px_0px_#011B78] p-6 flex flex-col justify-between w-full sm:w-[48%] lg:w-[30%] transition-transform duration-300 hover:scale-105"
+                className="relative bg-white rounded-lg border-2 border-[#011B78] 
+                 shadow-[3px_3px_0px_#011B78] p-6 flex flex-col justify-between 
+                 w-full sm:w-[48%] lg:w-[30%] transition-transform duration-300 
+                 hover:scale-105 before:content-['\201D'] before:absolute before:top-2 before:right-4 
+                 before:text-[#011B78] before:text-6xl before:font-bold"
               >
-                <p className="text-gray-700 italic mb-4">
-                  &ldquo;{feedback}&rdquo;
-                </p>
                 <div>
-                  <p className="font-semibold text-black">{name}</p>
-                  <p className="text-gray-500 text-sm">{role}</p>
+                  <p className={`${unbounded.className} text-[#011045]`}>
+                    {role}
+                  </p>
+                  <p className="text-[#011045] font-bold">{name}</p>
                 </div>
+                <p className="text-[#011045] font-extralight text-base my-1">
+                  {feedback}
+                </p>
               </div>
             ))}
           </div>

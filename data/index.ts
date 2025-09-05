@@ -116,13 +116,13 @@ export const servicesData = [
 export const reviews = [
   {
     name: "Tamara (Lagos, Nigeria)",
-    role: "CEO, Yefa Daily (Saudi Arabia)",
+    role: "CEO, Yefa Daily",
     feedback:
       "Exceptional mobile app development customized for our platform, enabling users to create, share, and publish forms — highly recommend!",
   },
   {
     name: "Yasmin (Singapore)",
-    role: "CFO, Careposting Healthcare",
+    role: "CFO, Careposting",
     feedback:
       "The healthcare website they built has been a game changer for our company's outreach and patient engagement.",
   },
@@ -130,6 +130,6 @@ export const reviews = [
     name: "Donald James (Hungary)",
     role: "CTO, Lumanagi",
     feedback:
-      "Their expertise with whitelist management, airdrops, and token launch helped us execute flawlessly.",
+      "Their expertise with whitelist management, airdrops, and token launch helped us execute and scale flawlessly.",
   },
 ];
