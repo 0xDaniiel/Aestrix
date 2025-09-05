@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="bg-[#fbf8f4] pb-5">
       <FadeInOnScroll>
-        <section className="max-w-7xl bg-gray-100 rounded-md flex items-center justify-between mx-auto px-3 sm:px-6 lg:px-8 py-2 md:py-4">
+        <section className="max-w-7xl rounded-md flex items-center justify-between mx-auto px-3 sm:px-6 lg:px-8 py-2 md:py-4">
           {/* Social links */}
           <div className="flex items-center gap-2 sm:gap-3">
             <Link
