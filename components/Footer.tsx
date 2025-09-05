@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="bg-[#fbf8f4] pb-5">
       <FadeInOnScroll>
-        <section className="max-w-7xl bg-gray-100 rounded-md flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 py- md:py-5">
+        <section className="max-w-7xl bg-gray-100 rounded-md flex items-center justify-between mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-5">
           <div className="flex items-center gap-3">
             <Link
               href="https://github.com/aestrix-dev"

@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div>
       <FadeInOnScroll>
-        <section className="relative w-full bg-white min-h-screen pt-16 md:pt-20 bg-[url('/images/pattern.svg')] bg-no-repeat bg-center bg-cover">
+        <section className="relative w-full bg-white min-h-screen pt-16 md:pt-20 bg-[url('/images/heropattern.svg')] bg-no-repeat bg-center bg-cover">
           {/* style={{
             backgroundImage: "url('/images/pattern.svg')",
             backgroundRepeat: "no-repeat",
