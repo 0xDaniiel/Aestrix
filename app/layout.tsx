@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import Script from "next/script";
+import AOSProvider from "@/components/AOSProvider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -75,11 +76,13 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.className} bg-white text-gray-900`}>
         <Toaster position="top-right" reverseOrder={false} />
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+        <AOSProvider>
+          <div className="mx-auto px-4 sm:px-6 lg:px-8">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </AOSProvider>
       </body>
     </html>
   );
