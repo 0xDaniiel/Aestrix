@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -55,7 +56,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className}  bg-white text-gray-900`}>
+      <head>
+        {/* ✅ Google Analytics Scripts */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JCCFN9ZC5P"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JCCFN9ZC5P', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
+      <body className={`${poppins.className} bg-white text-gray-900`}>
         <Toaster position="top-right" reverseOrder={false} />
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <Header />
