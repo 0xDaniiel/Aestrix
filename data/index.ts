@@ -40,14 +40,6 @@ export const projects = [
     image: "/images/yefa.png",
     link: "https://yefadaily.com",
   },
-  {
-    title: "Colonny: Communities app",
-    subtitle: "",
-    description:
-      "Turn your local campus or city into a buzzing social economy. Colonny lets users earn from posts and comments while building real-world connections.",
-    image: "/images/colony.png",
-    link: "https://apps.apple.com/ng/app/colonny-communities-app/id6462746411",
-  },
 ];
 
 export const navLinks = [
