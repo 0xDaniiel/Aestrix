@@ -40,6 +40,14 @@ export const projects = [
     image: "/images/yefa.png",
     link: "https://yefadaily.com",
   },
+  {
+    title: "Heritage",
+    subtitle: "",
+    description:
+      "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
+    image: "/images/heritage.png",
+    link: "https://heritage-phi.vercel.app/",
+  },
 ];
 
 export const navLinks = [
