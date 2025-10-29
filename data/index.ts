@@ -44,7 +44,7 @@ export const projects = [
     title: "Heritage",
     subtitle: "",
     description:
-      "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
+      "An insurance platform that simplifies policy, claims processing, and customer support for individuals and businesses.",
     image: "/images/heritage.png",
     link: "https://heritage-phi.vercel.app/",
   },
