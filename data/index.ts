@@ -23,15 +23,6 @@ export const projects = [
     image: "/images/newsletter.svg",
     link: "https://subsync-newsletter.vercel.app/",
   },
-
-  {
-    title: "Yefa Daily",
-    subtitle: "",
-    description:
-      "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
-    image: "/images/yefa.png",
-    link: "https://yefadaily.com",
-  },
   {
     title: "Heritage",
     subtitle: "",
@@ -40,6 +31,7 @@ export const projects = [
     image: "/images/heritage.png",
     link: "https://heritage-phi.vercel.app/",
   },
+
   {
     title: "Texxtile",
     subtitle: "",
@@ -47,6 +39,14 @@ export const projects = [
       "Built for creators, Texxtile makes it insanely easy to launch custom merch lines—with built-in analytics, seamless design tools, and direct-to-customer sales.",
     image: "/images/textile.svg",
     link: "https://my-texttile-two.vercel.app/",
+  },
+  {
+    title: "Yefa Daily",
+    subtitle: "",
+    description:
+      "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
+    image: "/images/yefa.png",
+    link: "https://yefadaily.com",
   },
 ];
 
