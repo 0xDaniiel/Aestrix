@@ -8,14 +8,6 @@ export const projects = [
     link: "https://yefadaily.com",
   },
   {
-    title: "Subsync",
-    subtitle: "",
-    description:
-      "Your inbox's new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
-    image: "/images/newsletter.svg",
-    link: "https://subsync-newsletter.vercel.app/",
-  },
-  {
     title: "Careposting",
     subtitle: "",
     description:
@@ -24,12 +16,12 @@ export const projects = [
     link: "https://careposting.com/",
   },
   {
-    title: "Texxtile",
+    title: "Subsync",
     subtitle: "",
     description:
-      "Built for creators, Texxtile makes it insanely easy to launch custom merch lines—with built-in analytics, seamless design tools, and direct-to-customer sales.",
-    image: "/images/textile.svg",
-    link: "https://my-texttile-two.vercel.app/",
+      "Your inbox's new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
+    image: "/images/newsletter.svg",
+    link: "https://subsync-newsletter.vercel.app/",
   },
 
   {
@@ -47,6 +39,14 @@ export const projects = [
       "An insurance platform that simplifies policy, claims processing, and customer support for individuals and businesses.",
     image: "/images/heritage.png",
     link: "https://heritage-phi.vercel.app/",
+  },
+  {
+    title: "Texxtile",
+    subtitle: "",
+    description:
+      "Built for creators, Texxtile makes it insanely easy to launch custom merch lines—with built-in analytics, seamless design tools, and direct-to-customer sales.",
+    image: "/images/textile.svg",
+    link: "https://my-texttile-two.vercel.app/",
   },
 ];
 
