@@ -54,8 +54,8 @@ const Hero = () => {
               className="max-w-3xl mx-auto text-sm sm:text-base md:text-xl text-[#011045] opacity-90 leading-relaxed"
             >
               From idea to launch, solutions that accelerate growth, increase
-              revenue, and simplify your business—guiding you every step of the
-              way.
+              revenue, and simplify your business while guiding you every step
+              of the way.
             </p>
           </section>
 

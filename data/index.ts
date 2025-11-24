@@ -3,7 +3,7 @@ export const projects = [
     title: "Yefa Daily",
     subtitle: "",
     description:
-      "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
+      "An app for men's productivity, habit tracking, and building consistency helping you stay focused and achieve daily goals.",
     image: "/images/yefa.png",
     link: "https://yefadaily.com",
   },
@@ -19,7 +19,7 @@ export const projects = [
     title: "Subsync",
     subtitle: "",
     description:
-      "Your inbox's new best friend—Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
+      "Your inbox's new best friend. Subsync curates exclusive deals and product drops from your favorite brands into one stylish, easy-to-read newsletter hub.",
     image: "/images/newsletter.svg",
     link: "https://subsync-newsletter.vercel.app/",
   },
@@ -31,22 +31,21 @@ export const projects = [
     image: "/images/heritage.png",
     link: "https://heritage-phi.vercel.app/",
   },
-
+  {
+    title: "Fresh Wash",
+    subtitle: "",
+    description:
+      "Reliable laundry and dry-cleaning service platform that lets customers book pickups, track orders, and get their clothes delivered with ease.",
+    image: "/images/laundry.png",
+    link: "https://fresh-wash.pages.dev/",
+  },
   {
     title: "Texxtile",
     subtitle: "",
     description:
-      "Built for creators, Texxtile makes it insanely easy to launch custom merch lines—with built-in analytics, seamless design tools, and direct-to-customer sales.",
+      "Built for creators, Texxtile makes it insanely easy to launch custom merch lines, with built-in analytics, seamless design tools, and direct-to-customer sales.",
     image: "/images/textile.svg",
     link: "https://my-texttile-two.vercel.app/",
-  },
-  {
-    title: "Yefa Daily",
-    subtitle: "",
-    description:
-      "An app for men's productivity, habit tracking, and building consistency — helping you stay focused and achieve daily goals.",
-    image: "/images/yefa.png",
-    link: "https://yefadaily.com",
   },
 ];
 
