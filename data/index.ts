@@ -79,7 +79,7 @@ export const reasons = [
     images: "/images/customer-focused.svg",
     title: "Customer Focused",
     description:
-      "Your success is our priority — we work closely with you every step of the way.",
+      "Your success is our priority, we work closely with you every step of the way.",
   },
   {
     images: "/images/proven.svg",
@@ -103,7 +103,7 @@ export const servicesData = [
   {
     title: "Blockchain Development",
     image: "/images/2b.png",
-    techStack: ["Solidity", "Ethereum", "Hardhat", "Web3.js"],
+    techStack: ["Solidity", "Ethereum", "Solana", "Web3.js"],
   },
   {
     title: "UI/UX Design",
@@ -117,7 +117,7 @@ export const reviews = [
     name: "Tamara (Lagos, Nigeria)",
     role: "CEO, Yefa Daily",
     feedback:
-      "Exceptional mobile app development customized for our platform, enabling users to create, share, and publish forms — highly recommend!",
+      "Exceptional mobile app development customized for our platform, enabling users to create, share, and publish forms. Highly recommend!",
   },
   {
     name: "Yasmin (Singapore)",
