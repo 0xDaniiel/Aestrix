@@ -7,7 +7,6 @@ import { projects } from "@/data/index";
 import { Unbounded } from "next/font/google";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
-
 import { Card } from "@/components/ui/card";
 import {
   Carousel,
